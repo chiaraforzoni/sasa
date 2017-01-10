@@ -1,0 +1,23 @@
+var dresda;
+var moon;
+
+function preload() {
+dresda = loadImage("assets/dresda.png");
+moon = loadImage("assets/moon.png");
+}
+
+function setup() {
+  createCanvas(windowWidth, windowHeight);
+}
+
+function draw() {
+ background(0,8,58); 
+ imageMode(CENTER);
+ image(moon, width/7, height/3, 120, 150);
+ image(dresda, width/2, height/2,windowWidth,windowHeight);
+ 
+}
+
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
+  }
